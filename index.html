@@ -339,6 +339,96 @@ ol, ul {
     display: block;
     overflow: hidden;
 }
+button {
+    --color-text: #fff;
+    --color-text-hover: #fff;
+    --color-text-disabled: #eeada9;
+    --color-text-active: #fff;
+    --color-border: #d8443a;
+    --color-border-hover: #e37971;
+    --color-border-focus: #ad2b22;
+    --color-border-disabled: #f6ddda;
+    --color-border-active: #ad2b22;
+    --color-background: #d8443a;
+    --color-background-hover: #e37971;
+    --color-background-disabled: #f6ddda;
+    --color-background-active: #ad2b22;
+}
+button {
+    background: var(--color-background);
+    border-color: var(--color-border);
+    color: var(--color-text);
+}
+button {
+    display: block !important;
+    width: 100% !important;
+}
+button {
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 16px;
+}
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+button {
+    -webkit-text-decoration: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-transition: background-color .12s ease-in-out, border-color .12s ease-in-out, color 75ms ease-in-out;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    height: 32px;
+    line-height: 32px;
+    margin: 0;
+    max-width: 100%;
+    padding: 0 12px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .12s ease-in-out, border-color .12s ease-in-out, color 75ms ease-in-out;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: auto;
+}
+[type=button], [type=checkbox], [type=radio], [type=reset], [type=submit], button, label, select {
+    cursor: pointer;
+}
+[type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: button;
+}
+button, input[type=submit] {
+    cursor: pointer;
+}
+button, input, select {
+    -webkit-font-feature-settings: "cpsp" 1, "cv10" 1, "kern" 1, "ss01" 1, "ss02" 1, "tnum" 1, "zero" 1;
+    font-feature-settings: "cpsp" 1, "cv10" 1, "kern" 1, "ss01" 1, "ss02" 1, "tnum" 1, "zero" 1;
+    font-family: inherit;
+    font-size: 14px;
+}
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
   </style>
 </head>
 
@@ -375,7 +465,7 @@ ol, ul {
 <p>Для того чтобы зачислить вашего ребёнка в данное учреждение, вам необходимо будет ниже скачать документ о зачислении вашего ребёнка, заполнив его корректно. <br> После заполнения документ нужно отправить по эл. почте указанной ниже. После отправки ожидайте одобрения.</p>
           <br>
           <div>
-            <p><b>Документ об зачислении ребёнка в данное учреждение:</b></p>
+            <p style="color: #0c77c3;"><b>Документ об зачислении ребёнка в данное учреждение:</b></p>
             <br>
             <button>Скачать документ</button>
           </div>
