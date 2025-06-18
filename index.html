@@ -217,6 +217,130 @@ a {
     padding-right: 28px;
     white-space: nowrap;
 }
+.menu0 {
+    display: -webkit-box;
+    display: flex;
+    gap: 24px;
+}
+.footer {
+    background-color: initial;
+    border: 0;
+}
+@media (min-width: 897px) {
+    .footer {
+        padding: 24px 0;
+    }
+}
+.footer {
+    background-color: #eeeef5;
+    border-top: 1px solid #dbdfe6;
+    color: #636770;
+    font-size: 14px;
+    line-height: 24px;
+    min-width: 980px;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+@media (min-width: 897px) {
+    .footer .layout-content {
+        -webkit-box-pack: justify;
+        -webkit-box-align: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.footer .layout-content {
+    display: -webkit-box;
+    display: flex;
+}
+.footer-apps, .footer-copyright, .footer-menu {
+    line-height: 24px;
+    padding: 0;
+}
+.footer-copyright {
+    min-width: 300px;
+}
+@media (min-width: 897px) {
+    .footer-copyright {
+        max-width: 33%;
+    }
+}
+@media (min-width: 897px) {
+    .footer-apps:not(:first-child), .footer-copyright:not(:first-child), .footer-menu:not(:first-child) {
+        margin-left: 24px;
+    }
+}
+.footer-apps, .footer-copyright, .footer-menu {
+    line-height: 24px;
+    padding: 0;
+}
+@media (min-width: 897px) {
+    .footer-apps {
+        -webkit-box-pack: end;
+        justify-content: flex-end;
+    }
+}
+.footer-apps {
+    -webkit-box-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: flex
+;
+}
+
+ol, ul {
+    list-style: none;
+}
+.footer-apps__item {
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    vertical-align: top;
+    white-space: nowrap;
+}
+.footer-apps__ios {
+    background-image: url(https://klrusschool.eljur.ru/assets/dist/badge_lrg.30628b42.svg);
+    height: 40px;
+    width: 135px;
+}
+.footer-apps__android, .footer-apps__ios {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    overflow: hidden;
+}
+.footer-apps__item+.footer-apps__item {
+    margin-left: 12px;
+}
+.footer-apps__item {
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    vertical-align: top;
+    white-space: nowrap;
+}
+.footer-apps__android {
+    background-image: url(https://klrusschool.eljur.ru/assets/dist/ru_badge_web_generic.7e73f548.png);
+    height: 42px;
+    width: 141px;
+}
+.footer-apps__android, .footer-apps__ios {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    overflow: hidden;
+}
   </style>
 </head>
 
@@ -249,6 +373,23 @@ a {
       </main>
       
 </div>
+
+<footer id="footer" class="footer">
+<div class="layout-content">
+<div class="footer-copyright">
+<span class="footer-copyright__sign">© </span>2009–2025 АИС «Электронный журнал»
+</div>
+<ul class="footer-apps">
+<li class="footer-apps__item">
+<a href="https://apps.apple.com/ru/app/elzur-dnevnik/id910733989" class="footer-apps__ios" title="Приложение для iOS из App Store" target="_blank" rel="noreferrer"></a>
+</li>
+<li class="footer-apps__item">
+<a href="https://play.google.com/store/apps/details?id=com.eljur.client" class="footer-apps__android" title="Приложение для Android из Google Play" target="_blank" rel="noreferrer"></a>
+</li>
+</ul>
+</div>
+
+</footer>
     
   </div>
   
