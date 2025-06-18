@@ -447,6 +447,35 @@ button.focus, button:focus-visible {
     box-shadow: 0 0 0 3px rgba(12, 119, 195, .4);
     outline: none;
 }
+.mail-link:active {
+    color: #d8443a;
+    text-decoration-color: #d8443a;
+}
+.mail-link:hover {
+    color: #2485c9;
+    text-decoration-color: #2485c9;
+}
+.mail-link:active, a:active {
+    color: #d8443a;
+    text-decoration-color: #d8443a;
+}
+.mail-link:hover, a:hover {
+    color: #2485c9;
+    text-decoration-color: #2485c9;
+}
+.mail-link {
+    -webkit-transition: color 37.5ms ease-in-out, background-color 37.5ms ease-in-out, -webkit-text-decoration-color 37.5ms ease-in-out;
+    color: #0c77c3;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: underline;
+    text-decoration-color: rgba(12, 119, 195, .33);
+    text-decoration-thickness: 1px;
+    text-underline-offset: .45ex;
+    transition: color 37.5ms ease-in-out, background-color 37.5ms ease-in-out, -webkit-text-decoration-color 37.5ms ease-in-out;
+    transition: color 37.5ms ease-in-out, background-color 37.5ms ease-in-out, text-decoration-color 37.5ms ease-in-out;
+    transition: color 37.5ms ease-in-out, background-color 37.5ms ease-in-out, text-decoration-color 37.5ms ease-in-out, -webkit-text-decoration-color 37.5ms ease-in-out;
+}
   </style>
 </head>
 
@@ -480,7 +509,7 @@ button.focus, button:focus-visible {
             <h2>Зачисление в школу - <b>Частная русская школа «Скофта»</b></h2>
           </div>
           <br>
-<p>Для того чтобы зачислить вашего ребёнка в данное учреждение, вам необходимо будет ниже скачать документ о зачислении вашего ребёнка, заполнив его корректно. <br> После заполнения документ нужно отправить по эл. почте: <a href="mailto:jankauskastomas64@gmail.com">jankauskastomas64@gmail.com</a>. После отправки ожидайте одобрения.</p>
+<p>Для того чтобы зачислить вашего ребёнка в данное учреждение, вам необходимо будет ниже скачать документ о зачислении вашего ребёнка, заполнив его корректно. <br> После заполнения документ нужно отправить по эл. почте: <a class="mail-link" href="mailto:jankauskastomas64@gmail.com">jankauskastomas64@gmail.com</a>. После отправки ожидайте одобрения.</p>
           <br>
           <div>
             <p style="color: #0c77c3;"><b>Документ об зачислении ребёнка в данное учреждение:</b></p>
