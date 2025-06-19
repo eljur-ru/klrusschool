@@ -475,6 +475,39 @@ button.focus, button:focus-visible {
     transition: color 37.5ms ease-in-out, background-color 37.5ms ease-in-out, text-decoration-color 37.5ms ease-in-out;
     transition: color 37.5ms ease-in-out, background-color 37.5ms ease-in-out, text-decoration-color 37.5ms ease-in-out, -webkit-text-decoration-color 37.5ms ease-in-out;
 }
+@supports (display:grid) {
+    .widget {
+        grid-gap: var(--widget-padding);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}
+.widget {
+    --widget-heading-font-size: 16px;
+    --widget-heading-line-height: 24px;
+    --widget-border-radius: 8px;
+    --widget-padding: 16px;
+    -webkit-box-flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-pack: justify;
+    -webkit-transition: box-shadow .12s ease-in-out;
+    background-color: #fff;
+    border: 1px solid #dbdfe6;
+    border-radius: 8px;
+    border-radius: var(--widget-border-radius);
+    box-shadow: none;
+    display: -webkit-box;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    padding: var(--widget-padding);
+    position: relative;
+    transition: box-shadow .12s ease-in-out;
+}
   </style>
 </head>
 
@@ -515,6 +548,12 @@ button.focus, button:focus-visible {
             <br>
             <a style="text-decoration: none;" href="https://eljur-ru.github.io/klrusschool/files/zachisleniye.docx" download><button>Скачать документ</button></a>
           </div>
+        </center>
+        
+        <br><br>
+
+        <center>
+          <div class="widget"><h5 class="widget__header"> Электронный классный журнал для школы </h5><div class="widget__content"><img alt="Электронный классный журнал для школы" src="https://eljur.gospmr.org/img/prdn/news-1.jpg"><div class="typography"><p class="hBHyRg5ArYi5TBipw1nW"> Это новейшая система учета успеваемости для школ и&nbsp;других учебных заведений. Прекрасный инструмент для администрации и&nbsp;учителей, который облегчает их&nbsp;каждодневную бумажную рутину, а&nbsp;электронный дневник школьника&nbsp;— удобный помощник для родителей, чтобы контролировать успехи своего ребенка в&nbsp;учебе и&nbsp;быть на&nbsp;связи со&nbsp;школой. </p><p class="hBHyRg5ArYi5TBipw1nW"> В основе разработки лежала идея сохранения знакомого каждому педагогу внешнего вида журнала, который и стал образцом внешнего вида нашей системы. Интуитивно понятный интерфейс позволяет учителям с легкостью освоить нововведение, а главное — затрачивать минимум времени на заполнение, и даже экономить время и силы на составлении регулярной отчетности. </p></div></div><div class="widget__footer">  </div><!----></div>
         </center>
       </main>
       
